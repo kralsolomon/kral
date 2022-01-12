@@ -14,16 +14,21 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 40px;
 }
+
 .ex{
     font-weight: 400;
 }
-
-
 
 header{
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
+
 #navbar{
     position: fixed;
     margin:-8px;
@@ -32,14 +37,44 @@ header{
     padding-bottom: 20px;
     padding-top: 20px;
     list-style-type: none;
-   
 }
 #navbar li{
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 17px;
     display: inline;
     padding: 20px;
 }
+
+.fa{
+    margin-left: 340px;
+    padding: 10px;
+    font-size: 23px;
+    width: 23px;
+    text-align: center;
+    text-decoration: none;
+   border-radius: 50%;
+} 
+
+
+
+.fa-twitter{
+    margin-left: 20px;
+}
+
+.fa-instagram{
+    margin-left: 20px;
+}
+
+.fa-telegram{
+    margin: 0;
+    width: 50px;
+    font-size: 50px;
+    color: #0088cc;
+}
+
+
+
+
 
 h1{
     text-align: center;
@@ -57,7 +92,6 @@ h3{
 
 
 #about{
-    
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
@@ -91,13 +125,38 @@ h3{
 
 .footer
 {
-    margin-top: 1000px;
     width: auto;
     height: 500px;
 }
 
 .katie img{
     margin-right: 50px;
+}
+
+hr{
+    size: 30px;
+    color: aqua;
+}
+
+.line{
+    margin-top: 900px;
+    size: 100px;
+    color: aqua;
+}
+
+.authors{
+    margin-top: -450px;
+    text-align: center;
+    width: 100%;
+}
+.kral{
+    float: left;
+    width: 50%;
+}
+
+.persona{
+    float: right;
+    width: 50%;
 }
 
 
