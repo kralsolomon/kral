@@ -3,9 +3,18 @@
 
    <head>
       <title>Swim Club</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link type="image/x-icon" href="logo.ico" rel="shortcut icon">
-      <link rel="stylesheet" href="style.css">
+      <link type="image/x-icon" href="images/logo.ico" rel="shortcut icon">
+      <link rel="stylesheet" href="style.css"> 
+      
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
@@ -13,52 +22,265 @@
    </head> 
    
 
-   
-   <header>
-      <ul id="navbar">
-         <style>
-            a{text-decoration: none;}
-            a{color: #000000;}
-         </style>
-         <li><a href="index.html#">Home</a></li>
-         <li><a href="index.html#about">About</a></li>
-         <li><a href="training.html">Types of trainings</a></li>
-         <li><a href="">BMI calculator</a></li>
-         <li><a href="index.html#contact">Contacts</a></li>
-         <li><a href="styles.html">Styles of swimming</a></li>
 
-
-         <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-         <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-         <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
-      </ul>
-   </header>
 
    
+         <nav class="navbar navbar-expand-lg navbar-light" id="home">
+            <a class="navbar-brand" href="#">
+               <img src="images/Swim.jpg" width="45" height="45" alt="">
+            </a>
+            <div class="cont">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#swim">About</a></li>
 
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                     Types of training
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="#">Muscle strength</a>
+                     <a class="dropdown-item" href="#">Improve stamina</a>
+                     <a class="dropdown-item" href="#"></a>
+                     </div>
+                  </li>
 
+                  <li class="nav-item"><a class="nav-link" href="#">BMI calculator</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+                  <li class="nav-item"><a class="nav-link" href="styles/styles.html">Styles of swimming</a></li>
+               </ul>
 
+               <ul class="navbar-nav">
+                  <li class="icons">
+                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                     <a href="https://www.instagram.com/kralyoursoul/" class="fa fa-instagram"></a>
+                     <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                  </li>
+               </ul>
+               
+            </div>
+         </nav>
+   
 
-
-   <body id="home">
-      <div class="main">
-         <p class="ex">work hard in silence</p>
-         <h1 class="nt">ALL ABOUT <br> SWIMMING</h1>
+   <div class="card text-black">
+      <img src="images/fonsramkami1.jpeg" class="card-img" alt="pool" style="width:100%">
+      <div class="card-img-overlay">
+            <p class="card-text">work hard in silence</p>
+            <h1 class="card-title">ALL ABOUT <br> SWIMMING</h1>
       </div>
-   </body>
+   </div> 
+
+<br>
+<hr id="swim" style="height: 2.4px;">
+<br> 
+
+
+   
+   <div class="container">
+      <div class="card-body">
+            <h1>About swimming</h1>
+      
+            <p>
+               Swimming is one of the safest sports, but despite this, it has huge advantages over other sports.
+               Unlike other sports, swimming doesn't shock our joints and bones so swimming can be done at any age.
+               When we swim, all muscles of our body are put into action, because of this it's the fastest way to lose weight or become slim.
+               But swimming is good not only for that, it's also decrease the risk of Cardiovascular diseases by 41%. <br>
+               And that's not all.
+            <br>
+               Swimming is one of the most energy-intensive sports: about 400-600 kilocalories are consumed in water per hour. 
+               Efforts, strokes, overcoming water resistance, 
+               maintaining body balance in a horizontal position and other movements require great physical effort,
+               work of large muscle groups. <br>
+               There are 4 swimming styles in total, these are freestyle, backstroke, breaststroke and butterfly.
+            </p>
+
+            <h3 class="learn">You can learn more about styles by this button</h3>
+            <a href="styles/styles.html" class="btn btn-primary">More about styles</a>
+            
+      </div>
+   </div>
+   
+
+<br>
+<br>
+<hr style="height: 2.4px;">
+<h1>Legends of swimming world</h1>
+<hr style="height: 2.2px;">
+<br>
+<br>
+<br>
+
+
+
+
+
+   <div class="container">
+      <div class="card1 mb-3">
+         <div class="row no-gutters">
+           <div class="col-md-4">
+               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+
+                     <div class="carousel-item active">
+                        <img src="images/phelps/phelps1.jpg"  class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/phelps/phelps2.jpg"  class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/phelps/phelps3.jpg"  class="d-block w-100" alt="...">
+                     </div>
+
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </button>
+               </div>
+           </div>
+           <div class="col-md-8">
+               <div class="card-body">
+                  <h2 class="card-title1">The greatest olympic athlete</h2>
+                  <p class="card-text1">Michael Phelps - was born in 1985, 30 June, he was swimming since 7 years, 
+                     at the of 10 he was already the holder of the national record in his age group. <br>
+                     In 2000, when he was 15, he took a part in Olympic Games.
+                     He has 23 gold, 3 silver and 2 bronze, in total 28 olympic medals - 
+                     it is an absolute record in history. No one has been able to break this record.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+
+
+<hr>
+
+
+   
+      <div class="card2 mb-3">
+         <div class="row no-gutters">
+            <div class="col-md-4">
+               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="images/katie/katie.jpg"  class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/katie/katie1.jpg"  class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/katie/katie2.jpg"  class="d-block w-100" alt="...">
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </button>
+               </div>
+            </div>
+            <div class="col-md-8">
+               <div class="card-body">
+                  <h2 class="card-title2">One of the seven women who won 7 gold medals</h2>
+                  <p class="card-text2">Kathleen Genevieve Ledecky - she was born in 1997, March 17. 
+                     Ledecky began swimming at the age of six due to the influence of her older brother and her mother.
+                     Having won 7 Olympic gold medals and 15 world championship gold medals, the most in history for a female swimmer, 
+                     she is considered one of the greatest female swimmers of all time. 
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+<br>
+<hr style="height: 2.4px;" id="contact">
+<br>
+
+   <footer>
+      <div class="container">
+         <div class="authors" >
+            <h3 class="h3">Authors</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+               <div class="col">
+                 <div class="card" style="width: 25rem;">
+                   <img src="images/authors/Salamat.jpg" class="card-img-top" alt="...">
+                   <div class="card-body3">
+                     <h5 class="card-title3" style="font-size: 25px;">Salamat Sagyndykov</h5>
+                     <p class="card-text3">Student of SE-2102</p>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Link to telegram<a href="#" class="fa fa-telegram"></a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+
+
+               <div class="col">
+                  <div class="card" style="width: 19rem;">
+                     <img src="images/authors/Eldana.jpg" class="card-img-top" alt="...">
+                     <div class="card-body3">
+                        <h5 class="card-title3">Eldana Kadenova</h5>
+                        <p class="card-text3">Student of SE-2102</p>
+                        <ul class="list-group list-group-flush">
+                           <li class="list-group-item">Link to telegram<a href="#" class="fa fa-telegram"></a></li>
+                        </ul> 
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </footer>
+
+    
+   
+
+
+
+
+
+   
+
+<!-- 
+
+
+
+
+
 
 
 <div class id="about">
    <div class="text">
-      <h1>What effect does swimming have on our body?</h1>
+      <h1 class="swim">What effect does swimming have on our body?</h1>
+      
 
       <p>
          Unlike other sports, swimming doesn't shock our joints and bones so swimming can be done at any age.
          When we swim, all muscles of our body are put into action, because of this it's the fastest way to lose weight or become slim.
          But swimming is good not only for that, it's also decrease the risk of Cardiovascular diseases by 41%.
-      </p>
-
-      <p>
+      <br>
+      <br>
          Swimming is one of the most energy-intensive sports: about 400-600 kilocalories are consumed in water per hour. 
          Efforts, strokes, overcoming water resistance, 
          maintaining body balance in a horizontal position and other movements require great physical effort,
@@ -132,8 +354,8 @@
          </div>
       </div>
 
-   </footer>
-
+   </footer> -->
+ 
 
    
 

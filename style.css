@@ -1,13 +1,175 @@
+
+.nav-item{
+    margin-left: 40px;
+}
+
+.nav-link{
+    color: #0088cc;
+    font-size: 18px;
+}
+
+.navbar-brand{
+    margin-left: 43px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.icons{
+    margin-left: 28px;
+}
+
+.fa{
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 23px;
+    width: 23px;
+    text-decoration: none;
+    border-radius: 50%;
+} 
+
+.fa-telegram{
+    margin: 0;
+    width: 50px;
+    font-size: 25px;
+    color: #0088cc;
+}
+
+
+.card{
+    border: 0px;
+}
+
+.card-body{
+    font-size: 20px;
+}
+
+.card-body1{
+    background-color: rgb(81, 81, 250);
+    font-size: 25px;
+}
+.card-text{
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 3vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-title{
+    text-align: center;
+    font-size: 6vw;
+    top:50%;
+    left: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card1{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+hr{
+    color: rgb(81, 81, 250);
+}
+
+.card-title1, .card-title2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.card-text1, .card-text2{
+    font-size: 23px;
+}
+
+.cont{
+    margin-right: 12.5px;
+}
+.navbar-toggler-icon, .navbar-toggler{
+    background-color: rgb(81, 81, 250);
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgb(81, 81, 250);
+}
+    
+.btn:hover {
+    background-color: rgb(81, 81, 250);
+}
+
+
+.btn:focus, .btn.focus {
+    box-shadow: none;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
+}
+
+.learn{
+    text-align: center;
+}
+.h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+  
+  
+  
+  
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 #home{
     background: url(fonsramkami.JPEG) no-repeat;
     background-size: 100%;
     font-family: 'Sen', sans-serif;
-    width: auto;
-    height: 850px;
+    width: 100%;
+    height: auto;
+   
 }
+
+
 .main{
-    padding-top: 150px;
-    width: auto;
+    padding-top: 200px;
+    width: 100%;
     height: 500px;
     text-align: center;
     color: #ffffff;
@@ -15,35 +177,20 @@
     font-size: 40px;
 }
 
+
+.nt{
+    font-size: 80px;
+}
+
+
+
+
+
 .ex{
     font-weight: 400;
 }
 
-header{
-    margin: 0;
-    padding: 0;
-}
 
-
-
-
-
-
-#navbar{
-    position: fixed;
-    margin:-8px;
-    width: 1920px;
-    background-color: #ffffff;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    list-style-type: none;
-}
-#navbar li{
-    margin-left: 20px;
-    font-size: 17px;
-    display: inline;
-    padding: 20px;
-}
 
 .fa{
     margin-left: 340px;
@@ -52,7 +199,7 @@ header{
     width: 23px;
     text-align: center;
     text-decoration: none;
-   border-radius: 50%;
+    border-radius: 50%;
 } 
 
 
@@ -71,12 +218,13 @@ header{
     font-size: 50px;
     color: #0088cc;
 }
+ */
 
 
 
 
 
-h1{
+/* h1{
     text-align: center;
 }
 
@@ -92,12 +240,12 @@ h3{
 
 
 #about{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    height: 850px;
-    width: auto; 
+    align-content: center;
+    margin-top: 250px;
+    
+    width: 100%; 
 }
+
 .txte{
     font-size: 30px;
 }
@@ -119,7 +267,8 @@ h3{
 }
 
 .block{
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
 }
 
@@ -133,14 +282,9 @@ h3{
     margin-right: 50px;
 }
 
+
 hr{
     
-    color: aqua;
-}
-
-.line{
-    margin-top: 900px;
-    size: 100px;
     color: aqua;
 }
 
@@ -157,7 +301,7 @@ hr{
 .persona{
     float: right;
     width: 50%;
-}
+} */
 
 
 
