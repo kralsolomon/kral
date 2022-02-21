@@ -5,16 +5,35 @@
       <title>Swim Club</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!------------------------------ Bootstrap ----------------------------->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+
+      <!-------------------------------- CSS ------------------------------>
+      <link rel="stylesheet" href="style.css"> 
+
+
+
+
+      <!-------------------------------- Icons ------------------------------>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link type="image/x-icon" href="images/logo.ico" rel="shortcut icon">
-      <link rel="stylesheet" href="style.css"> 
+
+
+      <!-------------------------------- JS and Jquery ------------------------------>
+      <script src="jsexe.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js" integrity="sha512-zuZ5wVszlsRbRF/vwXD0QS/tHzBYHFzCD/BT0lI3yrWhNZFWDkkF3KPEY//WTanqxwPdZkskQ+xZo0rnfHBc5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       
+      
+      
+
+      <!-------------------------------- Fonts ------------------------------>
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
@@ -22,66 +41,84 @@
    </head> 
    
 
-
-
    
-         <nav class="navbar navbar-expand-lg navbar-light" id="home">
-            <a class="navbar-brand" href="#">
-               <img src="images/Swim.jpg" width="45" height="45" alt="">
-            </a>
-            <div class="cont">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+   
+
+   <nav class="navbar navbar-expand-lg bg-light" id="home" >
+      <a class="navbar-brand" href="#">
+         <img src="images/Swim.jpg" width="45" height="45" alt="">
+      </a>
+      <div class="cont">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#swim">About</a></li>
+
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+               Types of training
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Muscle strength</a>
+               <a class="dropdown-item" href="#">Improve stamina</a>
+               <a class="dropdown-item" href="#"></a>
+               </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">BMI calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="styles/styles.html">Styles of swimming</a></li>
+         </ul>
+
+         <ul class="navbar-nav">
+            <li class="icons">
+               <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+               <a href="https://www.instagram.com/kralyoursoul/" class="fa fa-instagram"></a>
+               <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            </li>
+         </ul>
+         
+      </div>
+   </nav>
+
+
+
+
+
+   <div class="card text-black" id="water" onclick="zvuk()">
+      <button id="snackbar"></button>
+      <audio id="sound" src="sound of water/drop1 (mp3cut.net).mp3"></audio>
+
+      <script>
+         function zvuk() 
+         {
             
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#swim">About</a></li>
-
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                     Types of training
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                     <a class="dropdown-item" href="#">Muscle strength</a>
-                     <a class="dropdown-item" href="#">Improve stamina</a>
-                     <a class="dropdown-item" href="#"></a>
-                     </div>
-                  </li>
-
-                  <li class="nav-item"><a class="nav-link" href="#">BMI calculator</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
-                  <li class="nav-item"><a class="nav-link" href="styles/styles.html">Styles of swimming</a></li>
-               </ul>
-
-               <ul class="navbar-nav">
-                  <li class="icons">
-                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                     <a href="https://www.instagram.com/kralyoursoul/" class="fa fa-instagram"></a>
-                     <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
-                  </li>
-               </ul>
-               
-            </div>
-         </nav>
-   
-
-   <div class="card text-black">
-      <img src="images/fonsramkami1.jpeg" class="card-img" alt="pool" style="width:100%">
+         document.getElementById('sound').play();
+         }
+      </script>
       <div class="card-img-overlay">
             <p class="card-text">work hard in silence</p>
             <h1 class="card-title">ALL ABOUT <br> SWIMMING</h1>
       </div>
-   </div> 
+   </div>
 
-<br>
-<hr id="swim" style="height: 2.4px;">
+  
+
+   
+
+
+<br id="swim">
+<hr style="height: 2.4px;">
 <br> 
 
 
    
+
    <div class="container">
       <div class="card-body">
             <h1>About swimming</h1>
@@ -209,8 +246,8 @@
 
 
 
-<br>
-<hr style="height: 2.4px;" id="contact">
+<br id="contact">
+<hr style="height: 2.4px;">
 <br>
 
    <footer>
@@ -258,104 +295,11 @@
 
 
 
-
+   
 
    
 
-<!-- 
 
-
-
-
-
-
-
-<div class id="about">
-   <div class="text">
-      <h1 class="swim">What effect does swimming have on our body?</h1>
-      
-
-      <p>
-         Unlike other sports, swimming doesn't shock our joints and bones so swimming can be done at any age.
-         When we swim, all muscles of our body are put into action, because of this it's the fastest way to lose weight or become slim.
-         But swimming is good not only for that, it's also decrease the risk of Cardiovascular diseases by 41%.
-      <br>
-      <br>
-         Swimming is one of the most energy-intensive sports: about 400-600 kilocalories are consumed in water per hour. 
-         Efforts, strokes, overcoming water resistance, 
-         maintaining body balance in a horizontal position and other movements require great physical effort,
-         work of large muscle groups. 
-      </p>
-   </div>
-
-
-   <br>
-   <hr>
-   <br>
-
-
-   <h1>Legends of swimming world</h1>
-
-
-
-   <br>
-   <hr>
-   <div class="block">
-      <div class="phepls">
-         <h3>Michael Phelps - the greatest olympic athlete</h3>
-      
-         <img src="olympic.jpg" title="Michael Phelps" width="45%" style="float:right">  
-         <p class="txte">
-            Michael Phelps - was born in 1985, 30 June, he was swimming since 7 years, at the of 10 he was already the holder of the national record in his age group. <br>
-            In 2000, when he was 15, he took a part in Olympic Games.
-            He has 23 gold, 3 silver and 2 bronze, in total 28 olympic medals - 
-            it is an absolute record in history. No one has been able to break this record.
-         </p> 
-      </div>
-
-
-         <br>
-         <br>
-         <hr>
-
-      <div class="katie">
-         <h3>Kathleen Genevieve Ledecky - one of seven women in all sports to win 7 gold medals</h3>
-
-         <img src="katie.jpg" title="Katie Ledecky" width="50%" style="float:left;"> 
-         <p class="txte">
-            Kathleen Genevieve Ledecky - she was born in 1997, March 17 is an American competitive swimmer. <br>
-            Having won 7 Olympic gold medals and 15 world championship gold medals, the most in history for a female swimmer, <br>
-            she is considered one of the greatest female swimmers of all time. Ledecky is the world record holder in the women's 400, 800, and 1500 meter freestyle. 
-         </p>
-      </div>
-   </div>
-</div>
-
-
-<hr class="line">
-
-   <footer id="contact">
-      <h1 class="footer">
-         Authors  
-      </h1>
-      
-      <div class="authors">
-         <div class="kral">
-            <a href="#" class="fa fa-telegram"></a> 
-            <h3>Sagyndykov Salamat</h3>
-            <img src="Salamat.jpg" title="Salamat Sagyndykov" width="70%">
-         </div>
-
-         
-         <div class="persona">
-            <a href="#" class="fa fa-telegram"></a> 
-            <h3>Kadenova Eldana</h3>
-            <img src="Eldana.jpg" title="Eldana Kadenova" width="70%">
-         </div>
-      </div>
-
-   </footer> -->
- 
 
    
 
