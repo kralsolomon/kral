@@ -3,7 +3,7 @@ $(document).ready(function()
 
     $('#water').ripples({
         dropRadius: 20,
-        resolution: 200,
+        resolution: 512,
         
     });
 
