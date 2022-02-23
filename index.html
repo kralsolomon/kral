@@ -14,6 +14,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+
+
       <!-------------------------------- CSS ------------------------------>
       <link rel="stylesheet" href="style.css"> 
 
@@ -23,6 +26,8 @@
       <!-------------------------------- Icons ------------------------------>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link type="image/x-icon" href="images/logo.ico" rel="shortcut icon">
+
+
 
 
       <!-------------------------------- JS and Jquery ------------------------------>
@@ -64,13 +69,12 @@
                Types of training
                </a>
                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Muscle strength</a>
-               <a class="dropdown-item" href="#">Improve stamina</a>
-               <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#">Muscle strength</a>
+                  <a class="dropdown-item" href="#">Improve stamina</a>
                </div>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="#">BMI calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="#BMI">BMI calculator</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
             <li class="nav-item"><a class="nav-link" href="styles/styles.html">Styles of swimming</a></li>
          </ul>
@@ -83,6 +87,86 @@
             </li>
          </ul>
          
+         
+
+         <ul class="navbar-nav">
+            
+              
+                  
+
+
+                  
+                 
+
+
+
+               <button class="log" onclick="document.getElementById('id01').style.display='block'">Registrate on our site</button>
+
+               <div id="id01" class="modal">
+                  <form name="form1" class="modal-content animate"  method="post">
+
+                           <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                           </div>
+
+                           <div class="container">
+
+                              <label for="uname"><b>Name</b></label>
+                              <input id="login" type="text" placeholder="Enter Username" name="uname" required >
+                              
+                              <label for="psw"><b>Create password</b></label>
+                              <input name="password" id="userPassword" type="password" placeholder="Enter Password" autocomplete="current-password" minlength="8" maxlength="32" size="8" required>
+                              
+                              <button class="log" type="submit" onclick="check(document.form1.password)">Sign up</button>
+
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                           </div>
+
+
+                           <script>
+                              function check(pass)
+                              {
+
+                                 let isNumber = false;
+                                 let isUpString = false;
+                                 let isLowString = false;
+                                 for(let i = 0; i < pass.length; i++) 
+                                 {
+                                    if (pass.charCodeAt(i) >= 65 && pass.charCodeAt(i) <= 90) isUpString = true;
+                                    {
+                                      
+                                    }
+                                    if (pass.charCodeAt(i) >= 97 && pass.charCodeAt(i) <= 122) isLowString = true;
+                                    if (pass[i] >= 0 && pass[i] <= 9) isNumber= true;
+                                 }
+                                 if(!isUpString) 
+                                 {
+                                    alert("You need at least one uppercase letter");
+                                 }
+                                 else if(!isLowString) 
+                                 {
+                                    alert("You need at least one lowercase letter");
+                                 }
+                                 else if(!isNumber) 
+                                 {
+                                    alert("You need at least one number");
+                                 }
+                                 else {
+                                    alert("You successfully registrated!")
+                                 }
+                                 
+                              }
+                           </script>
+                           
+                  </form>
+               </div>
+               
+         </ul>   
+
+
+
+
+
       </div>
    </nav>
 
@@ -97,7 +181,6 @@
       <script>
          function zvuk() 
          {
-            
          document.getElementById('sound').play();
          }
       </script>
@@ -133,7 +216,8 @@
                Swimming is one of the most energy-intensive sports: about 400-600 kilocalories are consumed in water per hour. 
                Efforts, strokes, overcoming water resistance, 
                maintaining body balance in a horizontal position and other movements require great physical effort,
-               work of large muscle groups. <br>
+               work of large muscle groups. 
+            <br>
                There are 4 swimming styles in total, these are freestyle, backstroke, breaststroke and butterfly.
             </p>
 
@@ -233,7 +317,8 @@
             <div class="col-md-8">
                <div class="card-body">
                   <h2 class="card-title2">One of the seven women who won 7 gold medals</h2>
-                  <p class="card-text2">Kathleen Genevieve Ledecky - she was born in 1997, March 17. 
+                  <p 
+                     class="card-text2">Kathleen Genevieve Ledecky - she was born in 1997, March 17. 
                      Ledecky began swimming at the age of six due to the influence of her older brother and her mother.
                      Having won 7 Olympic gold medals and 15 world championship gold medals, the most in history for a female swimmer, 
                      she is considered one of the greatest female swimmers of all time. 
@@ -243,6 +328,59 @@
          </div>
       </div>
    </div>
+
+
+
+
+<br>
+<br id="BMI">
+<hr style="height: 2.4px;">
+<h1>BMI Calculator</h1>
+<hr style="height: 2.2px;">
+<br>
+<br>
+
+
+   <div class="container">
+      <div class="card-body">
+            <h1>BMI - What is it?</h1>
+      
+            <p>
+              BMI is a measurement of a person's leanness or corpulence based on their 
+              height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight 
+              for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight,
+              or obese depending on what range the value falls between.
+            <br>
+           
+            <br>
+            <div class="center">
+              <b>You can easily calculate it below</b> 
+              <br>
+              <br>
+               <input class="h" type="text" placeholder="Enter height in cm" id="h" >
+               <br>
+               <br>
+               
+               <input class="w" type="text" placeholder="Enter weight in kg" id="w" >
+               <br>
+               <br>
+               <button class="calc" onclick="innerHTML=calc()">Calculate your BMI</button>
+               <br>
+               <br>
+               <img class="table" src="images/table.jpg" alt="">
+            </div>
+            
+            
+            </p>
+
+            
+            
+            
+      </div>
+   </div>
+
+
+
 
 
 
