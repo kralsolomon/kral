@@ -148,7 +148,7 @@ hr{
  
    
       
-    #login, #userPassword  {
+    #login, #userPassword, #email, #repPassword  {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -212,9 +212,9 @@ hr{
    }
 
    .h , .w{
-       background-color: rgb(3, 129, 129);
+       background-color: white;
        border-radius: 5px;
-       border: none;
+       
    }
 
    .center{
@@ -222,6 +222,43 @@ hr{
        display: block;
    }
 
+   .container-signin{
+       margin-top: 25px;
+       text-align: center;
+   }
+
+   #signin{
+    text-decoration: none;
+    background-color: rgb(57, 57, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   }
+
+
+   .carta{
+       display: flex;
+
+       margin-left: auto;
+       margin-right: auto;
+       align-content: center;
+       flex-direction: column;
+   }
+
+   .block{
+    display: flex;
+
+    align-content: center;
+    flex-direction: column;
+   }
+
+   .ad{
+       text-align: center;
+       font-size: 30px;
+   }
 
 
 

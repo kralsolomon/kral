@@ -17,8 +17,12 @@
 
 
 
+
+
       <!-------------------------------- CSS ------------------------------>
       <link rel="stylesheet" href="style.css"> 
+
+
 
 
 
@@ -30,19 +34,291 @@
 
 
 
+
+
       <!-------------------------------- JS and Jquery ------------------------------>
       <script src="jsexe.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js" integrity="sha512-zuZ5wVszlsRbRF/vwXD0QS/tHzBYHFzCD/BT0lI3yrWhNZFWDkkF3KPEY//WTanqxwPdZkskQ+xZo0rnfHBc5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="index.js"></script>
       
-      
-      
+
+
+
+      <!-------------------------------- API------------------------------>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+         </script>
+            <script type="text/javascript">
+               // Функция ymaps.ready() будет вызвана, когда
+               // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+               ymaps.ready(init);
+               function init(){
+                  // Создание карты.
+                  var myMap = new ymaps.Map("map", {
+                     // Координаты центра карты.
+                     // Порядок по умолчанию: «широта, долгота».
+                     // Чтобы не определять координаты центра карты вручную,
+                     // воспользуйтесь инструментом Определение координат.
+                     center: [51.109176, 71.395700],
+                     // Уровень масштабирования. Допустимые значения:
+                     // от 0 (весь мир) до 19.
+                     zoom: 16
+                  });
+               }
+            </script>
+
+
+
 
       <!-------------------------------- Fonts ------------------------------>
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+
+
+
+      <style>
+         *{
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    margin-left: 40px;
+}
+
+.nav-link{
+    color: #0088cc;
+    font-size: 18px;
+}
+
+.navbar-brand{
+    margin-left: 43px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.icons{
+    margin-left: 28px;
+}
+
+.fa{
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+} 
+
+.fa-telegram{
+    margin: 0;
+    width: 50px;
+    font-size: 25px;
+    color: #0088cc;
+}
+
+#water{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/water.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#snackbar
+{
+    opacity: 0;
+}
+
+.card{
+    border: 0px;
+}
+
+.card-body{
+    font-size: 20px;
+}
+
+.card-body1{
+    background-color: rgb(81, 81, 250);
+    font-size: 25px;
+}
+.card-text{
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-title{
+    text-align: center;
+    font-size: 7vw;
+    top:50%;
+    left: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card1{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+hr{
+    color: rgb(81, 81, 250);
+}
+
+.card-title1, .card-title2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.card-text1, .card-text2{
+    font-size: 23px;
+}
+
+.cont{
+    margin-right: 12.5px;
+}
+.navbar-toggler-icon, .navbar-toggler{
+    background-color: rgb(81, 81, 250);
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgb(81, 81, 250);
+}
+    
+.btn:hover {
+    background-color: rgb(81, 81, 250);
+}
+
+
+.btn:focus, .btn.focus {
+    box-shadow: none;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
+}
+
+.learn{
+    text-align: center;
+}
+.h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+  
+  
+  
+  
+/* ----------------------------- Login Page ----------------------------- */
+ 
+   
+      
+    #login, #userPassword, #email, #repPassword  {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    
+    .log{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(81, 81, 250);
+        color: white;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+
+
+    .modal-content{
+        
+        color: rgb(81, 81, 250);
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .log:hover {
+    opacity: 0.8;
+    }
+
+    .cancelbtn{
+        float: right;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(250, 81, 81);
+        color: white;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+   .table{
+       width: 600px;
+   }
+
+   .close{
+       cursor: pointer;
+   }
+   
+   .calc{
+    background-color: rgb(81, 81, 250);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 2px;
+    border: none;
+   }
+
+   .h , .w{
+       background-color: white;
+       border-radius: 5px;
+       
+   }
+
+   .center{
+       text-align: center;
+       display: block;
+   }
+
+   .container-signin{
+       margin-top: 25px;
+       text-align: center;
+   }
+
+   #signin{
+    text-decoration: none;
+    background-color: rgb(57, 57, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   }
+      </style>
    </head> 
    
 
@@ -70,7 +346,6 @@
                </a>
                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="muscle strength/musclest.html">Muscle strength</a>
-                  <a class="dropdown-item" href="#">Improve stamina</a>
                </div>
             </li>
 
@@ -114,14 +389,23 @@
                               <label for="uname"><b>Name</b></label>
                               <input id="login" type="text" placeholder="Enter Username" name="uname" required >
                               
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
                               <label for="psw"><b>Create password</b></label>
                               <input name="password" id="userPassword" type="password" placeholder="Enter Password" autocomplete="current-password" minlength="8" maxlength="32" size="8" required>
+
+                              <label for="psw-repeat"><b>Repeat Password</b></label>
+                              <input type="password" id="repPassword" placeholder="Repeat Password" name="psw-repeat" required>
                               
                               <button class="log" type="submit" onclick="check(document.form1.password)">Sign up</button>
 
                               <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                            </div>
 
+                           <div class="container-signin">
+                              <p>Already have an account? <a id="signin" href="#">Sign in</a></p>
+                           </div>
 
                            <script>
                               function check(pass)
@@ -384,18 +668,48 @@
 
 
 
-<br id="contact">
+<br>
 <hr style="height: 2.4px;">
 <br>
 
    <footer>
-      <div class="container">
+
+      <div class="carta">
+         <div class="ad">
+            The multifunctional swimming pool is located at the address: Nur-Sultan, Turan Avenue, 57. <br>
+            We work daily: 07:00 - 22:00.
+            <br>
+            <br>
+         </div>
+
+         <div class="block">
+            <div id="map" style="width: 800px; height: 400px; margin-left: auto; margin-right: auto;"></div>
+         </div>
+        
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      
+      <div class="container" id="contact">
          <div class="authors" >
             <h3 class="h3">Authors</h3>
             <div class="row row-cols-1 row-cols-md-2 g-4">
 
 
-               <div class="col">
+               <div class="col" style="float: left;">
                  <div class="card" style="width: 25rem;">
                    <img src="images/authors/Salamat.jpg" class="card-img-top" alt="...">
                    <div class="card-body3">
@@ -409,11 +723,11 @@
                </div>
 
 
-               <div class="col">
+               <div class="col" style="float: right;" >
                   <div class="card" style="width: 19rem;">
-                     <img src="images/authors/Eldana.jpg" class="card-img-top" alt="...">
+                     <img src="images/authors/" class="card-img-top" alt="...">
                      <div class="card-body3">
-                        <h5 class="card-title3">Eldana Kadenova</h5>
+                        <h5 class="card-title3">Erzhanat Toleubay</h5>
                         <p class="card-text3">Student of SE-2102</p>
                         <ul class="list-group list-group-flush">
                            <li class="list-group-item">Link to telegram<a href="#" class="fa fa-telegram"></a></li>
@@ -425,6 +739,8 @@
             </div>
          </div>
 
+
+         
       </div>
    </footer>
 
